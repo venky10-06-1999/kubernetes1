@@ -12,3 +12,9 @@ spec:
         command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
       restartPolicy: OnFailure
     # The pod template ends here
+    
+    
+    //command to build the pod:// we use apply for creating and updating the pod
+=>kubectl apply -f job.yaml
+   or
+=> kubectl create -f job.yaml 
