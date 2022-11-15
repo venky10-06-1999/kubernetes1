@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+//name of the pod//
+  name: nginx-pod
+  labels:
+  //label name used tocooned the service in annotations//
+    app.kubernetes.io/name: proxy
+spec:
+  containers:
+  - name: nginx
+    image: nginx:stable
+    ports:
+      - containerPort: 80
+        name: http-web-svc
