@@ -13,3 +13,10 @@ spec:
     ports:
       - containerPort: 80
         name: http-web-svc
+        
+        
+        
+//command to build the pod:// we use apply for creating and updating the pod
+=>kubectl apply -f simple-pod.yaml
+   or
+=> kubectl create -f simple-pod.yaml  
