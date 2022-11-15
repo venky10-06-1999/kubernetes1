@@ -12,3 +12,9 @@ spec:
     protocol: TCP
     port: 80
     targetPort: http-web-svc
+    
+    
+    //command to build the pod:// we use apply for creating and updating the pod
+=>kubectl apply -f service.yaml
+   or
+=> kubectl create -f service.yaml 
